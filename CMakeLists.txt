@@ -22,7 +22,8 @@ if(qRestAPI_QT_VERSION VERSION_GREATER "4")
 endif()
 
 if(qRestAPI_QT_VERSION VERSION_GREATER "4")
-  set(qRestAPI_QT6_COMPONENTS Core Gui Network Script Test)
+    #  set(qRestAPI_QT6_COMPONENTS Core Gui Network Script Test)
+  set(qRestAPI_QT6_COMPONENTS Core Gui Network Test)
   find_package(Qt6 COMPONENTS ${qRestAPI_QT6_COMPONENTS} REQUIRED)
 else()
   # HACK: QtXml is required because of "http://www.richelbilderbeek.nl/CppLinkErrorUndefinedReferenceToQListData.htm"
